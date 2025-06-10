@@ -1,0 +1,60 @@
+package CM2;
+
+class QueueArray {
+    TransaksiPengisian[] data;
+    int front, rear, max, size;
+
+    QueueArray (int n) {
+        max = n;
+        data = new TransaksiPengisian[n];
+        front = rear = -1;
+        size = 0;
+    }
+
+    public boolean isFull() {
+        if (size == max) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean isEmpty() {
+        if (size == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    void enqueue(TransaksiPengisian t) {
+        if (isFull()) {
+            System.out.println("Queue transaksi penuh.");
+            return;
+        }
+        if (isEmpty()) {
+            front = rear = 0;
+        } else {
+            rear = (rear + 1) % max;
+        }
+        data[rear] = t;
+        size++;
+    }
+    
+
+    void print() {
+        if (isEmpty()) {
+            System.out.println("Belum ada transaksi.");
+            return;
+        }
+        int i = front;
+        System.out.println("-- Riwayat Transaksi --");
+        while (true) {
+            System.out.println(data[i].kendaraan.platNomor + ": "+ data[i].totalBayar);
+            if (i == rear) break;
+            i = (i + 1) % max;
+        }
+        System.out.println("Jumlah transaksi: " + size);
+    }
+    
+}
