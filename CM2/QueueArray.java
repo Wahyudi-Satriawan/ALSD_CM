@@ -27,7 +27,7 @@ class QueueArray {
         }
     }
 
-    void enqueue(TransaksiPengisian t) {
+    void enqueue(TransaksiPengisian transaksi) {
         if (isFull()) {
             System.out.println("Queue transaksi penuh.");
             return;
@@ -41,12 +41,12 @@ class QueueArray {
                 rear ++;
             }
         }
-        data[rear] = t;
+        data[rear] = transaksi;
         size++;
     }
     
 
-    void print() {
+    void riwayatTransaksi() {
         if (isEmpty()) {
             System.out.println("Belum ada transaksi.");
             return;

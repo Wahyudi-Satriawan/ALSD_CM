@@ -57,7 +57,7 @@ public class Main {
                     }
                     break;
                 case 5:
-                    riwayat.print();
+                    riwayat.riwayatTransaksi();
                     break;
                 case 0:
                     System.out.println("Terima kasih!");
