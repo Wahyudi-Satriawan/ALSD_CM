@@ -16,13 +16,4 @@ class TransaksiPengisian {
     void hitungTotal() {
         totalBayar = liter * bbm.hargaPerLiter;
     }
-
-    public String toString() {
-        return kendaraan.platNomor + " - " + kendaraan.tipe + " - " + kendaraan.merk +
-            " | BBM: " + bbm.namaBBM +
-            " | Liter: " + liter +
-            " | Harga/Liter: " + bbm.hargaPerLiter +
-            " | Total: Rp" + totalBayar;
-    }
-
 }
