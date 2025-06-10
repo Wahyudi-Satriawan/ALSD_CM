@@ -1,6 +1,6 @@
 package CM2;
 
-public class Kendaraan {
+public class Kendaraan { //Adel
     String platNomor, tipe, merk;
 
     Kendaraan(String platNomor, String tipe, String merk) {
@@ -9,7 +9,7 @@ public class Kendaraan {
         this.merk = merk;
     }
     
-    void tampilInformasi() {
+    void tampilInformasi() { //Bagas
         System.out.println("=================================");
     System.out.println("Plat Nomor: " + platNomor );
     System.out.println("Tipe: " + tipe );

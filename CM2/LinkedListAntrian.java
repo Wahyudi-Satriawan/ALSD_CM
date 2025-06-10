@@ -8,7 +8,7 @@ public class LinkedListAntrian {
         return (head == null);
     }
     
-    public void addLast (Kendaraan dataKendaraan) {
+    public void addLast (Kendaraan dataKendaraan) { //Adel
         NodeLinkedList newNode = new NodeLinkedList(dataKendaraan);
        if (isEmpty()) {
         head = tail = newNode;
@@ -39,7 +39,7 @@ public class LinkedListAntrian {
         return count;
     }
 
-    Kendaraan ambil() {
+    Kendaraan ambil() { //Wahyu
         if (head == null) return null;
         Kendaraan dataKendaraan = head.data;
         head = head.next;

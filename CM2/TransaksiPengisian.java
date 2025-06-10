@@ -1,6 +1,6 @@
 package CM2;
 
-class TransaksiPengisian {
+class TransaksiPengisian { //Wahyu
     Kendaraan kendaraan;
     BBM bbm;
     double liter;

@@ -1,6 +1,6 @@
 package CM2;
 
-class QueueArray {
+class QueueArray { //Wahyu
     TransaksiPengisian[] data;
     int front, rear, max, size;
 
@@ -46,7 +46,7 @@ class QueueArray {
     }
     
 
-    void riwayatTransaksi() {
+    void riwayatTransaksi() { //Adel
         if (isEmpty()) {
             System.out.println("Belum ada transaksi.");
             return;
@@ -62,5 +62,4 @@ class QueueArray {
         }
         System.out.println("Jumlah transaksi: " + size);
     }
-    
 }

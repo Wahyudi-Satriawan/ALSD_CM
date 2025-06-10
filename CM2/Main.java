@@ -21,7 +21,7 @@ public class Main {
             sc.nextLine();
 
             switch (pilihan) {
-                case 1:
+                case 1: //Adel
                     System.out.print("Masukkan Plat Nomor: ");
                     String platNomor = sc.nextLine();
                     System.out.print("Masukkan Jenis Kendaraan: ");
@@ -31,13 +31,13 @@ public class Main {
                     antrian.addLast(new Kendaraan(platNomor, tipe, merk));
                     System.out.println(">> Kendaraan masuk ke dalam antrian.");
                     break;
-                case 2:
+                case 2: //Bagas
                     antrian.print();
                     break;
-                case 3:
+                case 3: //Bagas
                     System.out.println("Jumlah kendaraan dalam antrian: " + antrian.getSize());
                     break;
-                case 4:
+                case 4: //Wahyu
                     Kendaraan dataKendaraan = antrian.ambil();
                     if (dataKendaraan == null) {
                         System.out.println("Antrian kosong.");
@@ -56,7 +56,7 @@ public class Main {
                         System.out.println(">> Transaksi berhasil dicatat.");
                     }
                     break;
-                case 5:
+                case 5: //Adel
                     riwayat.riwayatTransaksi();
                     break;
                 case 0:

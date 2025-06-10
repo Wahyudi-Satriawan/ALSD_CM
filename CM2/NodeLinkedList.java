@@ -1,6 +1,6 @@
 package CM2;
 
-public class NodeLinkedList {
+public class NodeLinkedList { //Bagas
     Kendaraan data;
     NodeLinkedList next;
 
