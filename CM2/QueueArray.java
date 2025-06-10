@@ -51,11 +51,13 @@ class QueueArray {
             System.out.println("Belum ada transaksi.");
             return;
         }
-        int i = front;
         System.out.println("-- Riwayat Transaksi --");
+        int i = front;
         while (true) {
             System.out.println(data[i].kendaraan.platNomor + ": "+ data[i].totalBayar);
-            if (i == rear) break;
+            if (i == rear){
+                break;
+            }
             i = (i + 1) % max;
         }
         System.out.println("Jumlah transaksi: " + size);
