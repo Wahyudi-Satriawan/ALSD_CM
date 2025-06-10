@@ -35,7 +35,7 @@ class QueueArray {
         if (isEmpty()) {
             front = rear = 0;
         } else {
-            rear = (rear + 1) % max;
+            rear = (rear + 1) % max;//Perlu dipelajari
         }
         data[rear] = t;
         size++;
@@ -52,7 +52,7 @@ class QueueArray {
         while (true) {
             System.out.println(data[i].kendaraan.platNomor + ": "+ data[i].totalBayar);
             if (i == rear) break;
-            i = (i + 1) % max;
+            i = (i + 1) % max;// perlu dipelajari
         }
         System.out.println("Jumlah transaksi: " + size);
     }

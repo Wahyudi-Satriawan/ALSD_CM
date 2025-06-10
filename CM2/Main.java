@@ -38,8 +38,8 @@ public class Main {
                     System.out.println("Jumlah kendaraan dalam antrian: " + antrian.getSize());
                     break;
                 case 4:
-                    Kendaraan k = antrian.ambil();
-                    if (k == null) {
+                    Kendaraan dataKendaraan = antrian.ambil();
+                    if (dataKendaraan == null) {
                         System.out.println("Antrian kosong.");
                     } else {
                         System.out.print("Jenis BBM (Pertalite/Pertamax/Solar/Dexlite): ");
@@ -50,7 +50,7 @@ public class Main {
                         System.out.print("Jumlah liter: ");
                         double liter = sc.nextDouble();
                         sc.nextLine();
-                        TransaksiPengisian transaksi = new TransaksiPengisian(k, bbm, liter);
+                        TransaksiPengisian transaksi = new TransaksiPengisian(dataKendaraan, bbm, liter);
                         transaksi.hitungTotal();
                         riwayat.enqueue(transaksi);
                         System.out.println(">> Transaksi berhasil dicatat.");
