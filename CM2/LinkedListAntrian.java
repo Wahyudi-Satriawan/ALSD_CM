@@ -1,6 +1,6 @@
 package CM2;
 
-public class LinkedListAntrian {
+public class LinkedListAntrian { //Bagas
     NodeLinkedList head;
     NodeLinkedList tail;
 
