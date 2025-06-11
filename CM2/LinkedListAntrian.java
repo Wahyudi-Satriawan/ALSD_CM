@@ -25,7 +25,7 @@ public class LinkedListAntrian { //Bagas
         }
         while (temp != null) {
             temp.data.tampilInformasi();
-            temp = temp.next;
+            temp = temp.next; 
         }
     }
 
@@ -40,7 +40,9 @@ public class LinkedListAntrian { //Bagas
     }
 
     Kendaraan ambil() { //Wahyu
-        if (head == null) return null;
+        if (head == null) {
+            return null;
+        }
         Kendaraan dataKendaraan = head.data;
         head = head.next;
         return dataKendaraan;
