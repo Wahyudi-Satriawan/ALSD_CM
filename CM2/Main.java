@@ -7,9 +7,10 @@ public class Main {
         LinkedListAntrian antrian = new LinkedListAntrian();
         QueueArray riwayat = new QueueArray(100);
 
-        int pilihan;
+        int menu;
         do {
-            System.out.println("\n===== MENU SPBU =====");
+            System.out.println("\n");
+            System.out.println("===== MENU SPBU =====");
             System.out.println("1. Tambah Kendaraan ke Antrian");
             System.out.println("2. Tampilkan Antrian");
             System.out.println("3. Tampilkan Jumlah Antrian");
@@ -17,10 +18,10 @@ public class Main {
             System.out.println("5. Tampilkan Riwayat Transaksi");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
-            pilihan = sc.nextInt();
+            menu = sc.nextInt();
             sc.nextLine();
 
-            switch (pilihan) {
+            switch (menu) {
                 case 1: //Adel
                     System.out.print("Masukkan Plat Nomor: ");
                     String platNomor = sc.nextLine();
@@ -38,7 +39,7 @@ public class Main {
                     System.out.println("Jumlah kendaraan dalam antrian: " + antrian.getSize());
                     break;
                 case 4: //Wahyu
-                    Kendaraan dataKendaraan = antrian.ambil();
+                    Kendaraan dataKendaraan = antrian.removeFirst();
                     if (dataKendaraan == null) {
                         System.out.println("Antrian kosong.");
                     } else {
@@ -65,7 +66,7 @@ public class Main {
                 default:
                     System.out.println("Pilihan tidak valid.");
             }
-        } while (pilihan != 0);
+        } while (menu != 0);
         sc.close();
     }
 }

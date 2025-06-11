@@ -39,7 +39,7 @@ public class LinkedListAntrian { //Bagas
         return count;
     }
 
-    Kendaraan ambil() { //Wahyu
+    public Kendaraan removeFirst() { //Wahyu
         if (head == null) {
             return null;
         }

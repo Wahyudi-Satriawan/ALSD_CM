@@ -13,7 +13,7 @@ class TransaksiPengisian { //Wahyu
         this.totalBayar = 0;
     }
 
-    void hitungTotal() {
+    public void hitungTotal() {
         totalBayar = liter * bbm.hargaPerLiter;
     }
 }

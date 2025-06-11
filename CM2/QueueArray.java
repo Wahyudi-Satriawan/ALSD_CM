@@ -27,7 +27,7 @@ class QueueArray { //Wahyu
         }
     }
 
-    void enqueue(TransaksiPengisian transaksi) {
+    public void enqueue(TransaksiPengisian transaksi) {
         if (isFull()) {
             System.out.println("Queue transaksi penuh.");
             return;
@@ -46,7 +46,7 @@ class QueueArray { //Wahyu
     }
     
 
-    void riwayatTransaksi() { //Adel
+    public void riwayatTransaksi() { //Adel
         if (isEmpty()) {
             System.out.println("Belum ada transaksi.");
             return;
