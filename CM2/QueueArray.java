@@ -27,7 +27,7 @@ class QueueArray { //Wahyu
         }
     }
 
-    public void enqueue(TransaksiPengisian transaksi) {
+    public void simpanRiwayat(TransaksiPengisian transaksi) {
         if (isFull()) {
             System.out.println("Queue transaksi penuh.");
             return;

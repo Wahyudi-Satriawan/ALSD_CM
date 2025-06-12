@@ -53,7 +53,7 @@ public class Main {
                         sc.nextLine();
                         TransaksiPengisian transaksi = new TransaksiPengisian(dataKendaraan, bbm, liter);
                         transaksi.hitungTotal();
-                        riwayat.enqueue(transaksi);
+                        riwayat.simpanRiwayat(transaksi);
                         System.out.println(">> Transaksi berhasil dicatat.");
                     }
                     break;
